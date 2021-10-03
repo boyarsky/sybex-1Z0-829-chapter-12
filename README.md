@@ -208,27 +208,6 @@ Alternate form of describing a module:
 ```
 jar --file mods/zoo.animal.feeding.jar --describe-module
 ```
-## Using the jdeps Command
-Listing dependencies
-```
-jdeps -s mods/zoo.animal.feeding.jar
-```
-Alternate form of listing dependencies:
-```
-jdeps -summary mods/zoo.animal.feeding.jar
-```
-Without summary
-```
-jdeps mods/zoo.animal.feeding.jar
-```
-Listing dependencies with module path
-```
-jdeps -s --module-path mods mods/zoo.animal.care.jar
-```
-Alternate form of listing dependencies with module path
-```
-jdeps -summary --module-path mods mods/zoo.animal.care.jar
-```
 
 ## Using the jmod command
 Don't need to be able to use in examples for this exam
@@ -244,10 +223,19 @@ Create zoo.dino.jar for Dino module
 ```
 jar -cvf zoo.dino.jar .
 ```
-Run jdeps commands
+Run jdeps command
 ```
 jdeps zoo.dino.jar
+```
+
+Get jdeps summary
+```
 jdeps -s zoo.dino.jar
+jdeps -summary zoo.dino.jar
+```
+
+List internal APIs
+```
 jdeps --jdk-internals zoo.dino.jar
 ```
 
