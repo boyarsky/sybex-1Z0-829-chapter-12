@@ -175,7 +175,7 @@ java -p mods -m zoo.visitor/zoo.visitor.Tourist
 
 # Discovering Modules
 
-## Using the java Command
+## java
 Describing a module:
 ```
 java -p mods -d zoo.animal.feeding
@@ -199,7 +199,7 @@ Showing Module Resolution:
 java --show-module-resolution -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
 ```
 
-## Using the jar Command
+## jar
 Describing a module:
 ```
 jar -f mods/zoo.animal.feeding.jar -d
@@ -209,11 +209,11 @@ Alternate form of describing a module:
 jar --file mods/zoo.animal.feeding.jar --describe-module
 ```
 
-## Using the jmod command
+## jmod
 Don't need to be able to use in examples for this exam
 
 
-## Using the jdeps command
+## jdeps
 
 Compile Dino jar
 ```
@@ -239,3 +239,9 @@ List internal APIs
 jdeps --jdk-internals zoo.dino.jar
 ```
 
+# jlink
+
+Create Java runtime image
+```
+jlink --module-path mods --add-modules zoo.animal.talks --output zooApp
+```
