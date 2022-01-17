@@ -1,6 +1,6 @@
 # sybex-1Z0-829-chapter-12
 
-Code and commands from OCP Oracle Certified Professional Java SE 17 Study Guide: Exam 1Z0-829 by Scott Selikoff and Jeanne Boyarsky
+Code and commands from [OCP Oracle Certified Professional Java SE 17 Study Guide: Exam 1Z0-829 by Scott Selikoff and Jeanne Boyarsky](https://www.amazon.com/Oracle-Certified-Professional-Developer-Study/dp/1119864585)
 
 The code in chapter 12 (modules) is a lot of file creation. Additionally, the commands are hard to type in. Therefore we are providing a repository with the code from the book to facilitate running the example.
 
